@@ -1,0 +1,20 @@
+{
+    "semi": true,
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": {
+                "semi": true
+            }
+        },
+        {
+            "files": ["*.md"],
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ],
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "singleQuote": true
+}

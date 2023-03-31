@@ -1,0 +1,5 @@
+.env
+.next
+.contentlayer
+node_modules
+dist
