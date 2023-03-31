@@ -25,7 +25,7 @@ export const getMDXComponents = ({ params }) => {
             } else if (Href.startsWith('#')) {
                 return (
                     <div className="flex flex-row items-center cursor-pointer group">
-                        <div className="absolute left-0 -ml-[1.7rem] font-sans font-800 text-isLabelDarkSecondary opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
+                        <div className="absolute left-0 -ml-[2rem] font-sans font-800 text-isLabelDarkSecondary opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
                             #
                         </div>
                         <a

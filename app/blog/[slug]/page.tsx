@@ -34,6 +34,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
 
     if (!content) return notFound();
     else {
+        console.log(content.headings);
         return (
             <section className="p-3">
                 <Render props={content} params={params} />
