@@ -1,6 +1,28 @@
 import './globals.css';
-import { Roboto_Flex, Roboto_Mono } from '@next/font/google';
+import {
+    Roboto_Flex,
+    Roboto_Mono,
+    Roboto_Serif,
+    Roboto_Slab,
+    Lora,
+} from '@next/font/google';
 import { cx } from 'class-variance-authority';
+
+const lora = Lora({
+    weight: ['400', '500', '600', '700'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'block',
+    variable: '--font-lora',
+});
+
+const robotoSerif = Roboto_Serif({
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'block',
+    variable: '--font-robotoSerif',
+});
 
 const robotoSans = Roboto_Flex({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -70,7 +92,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                 className={cx(
                     robotoSans.variable,
                     robotoMono.variable,
-                    'flex flex-col place-content-start items-center bg-isSystemDarkPrimary font-sans text-isLabelDarkSecondary'
+                    robotoSerif.variable,
+                    lora.variable,
+                    'flex flex-col place-content-start items-center bg-isBlack font-sans text-isLabelDarkSecondary'
                 )}
             >
                 {children}

@@ -10,6 +10,7 @@ module.exports = {
             fontFamily: {
                 sans: ['var(--font-robotoSans)'],
                 mono: ['var(--font-robotoMono)'],
+                serif: ['var(--font-robotoSerif)'],
             },
             fontWeight: {
                 100: '100',
