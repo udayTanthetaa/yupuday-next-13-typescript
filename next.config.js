@@ -15,6 +15,7 @@ const nextConfig = {
                 pathname: '/**',
             },
         ],
+        domains: ['uploads-ssl.webflow.com'],
     },
     redirects() {
         try {
